@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!--  bootstrap added -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<style>
+			.display-handle {
+				display: none;
+				color: rgb(231, 49, 49);
+			}
+			.card-button {
+				color: white;
+				background-color: brown;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- search box section 
+    ----------------->
+		<section class="container w-75 mx-auto pt-5">
+			<h5 id="error-message" class="display-handle text-center">
+				Not found..! Press authentic data...
+			</h5>
+			<h3 class="text-center">Dream Phone</h3>
+			<div class="input-group mb-3">
+				<input
+					id="search-field"
+					type="text"
+					class="form-control"
+					placeholder="Press Phone name... "
+					aria-label="Recipient's username"
+					aria-describedby="button-addon2"
+				/>
+				<button
+					class="btn btn-outline-secondary"
+					type="button"
+					id="search-button"
+				>
+					Search
+				</button>
+			</div>
+		</section>
+
+		<!-- display products details   -->
+		<section id="show-details" class="container">
+			<!-- inject details here  -->
+		</section>
+
+		<!-- search result display section  
+   ---------------------------------->
+		<section class="container pt-5">
+			<div id="show-Result" class="row row-cols-1 row-cols-md-3 g-4"></div>
+		</section>
+		<!-- show all button  -->
+		<section class="container">
+			<div class="d-flex justify-content-center">
+				<button
+					style="color: white; background-color: tomato; border-radius: 8px"
+					id="show-all-Button"
+					class="display-handle"
+					type="button"
+					class="btn btn-primary"
+				>
+					Show All
+				</button>
+			</div>
+		</section>
+
+		<!-- connection with js 
+    ----------- -->
+		<script src="js/index.js"></script>
+		<!-- connection with bootstrap script  -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
